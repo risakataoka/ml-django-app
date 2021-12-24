@@ -1,0 +1,27 @@
+#title-name {
+  margin: 50px;
+  font-family: "Otomanopee One", sans-serif;
+  color: #4c4c4c;
+}
+.file-select {
+  margin: 30px;
+}
+.back-img {
+  background: url("/static/img/machine-back.jpg");
+  position: relative;
+  height: 100vh;
+}
+.sample-img {
+  padding: 5px;
+  border: 10px solid #17a2b8;
+  background-color: #ffffff;
+}
+.error-msg {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 599px) {
+  #title-name {
+    font-size: x-large;
+  }
+}

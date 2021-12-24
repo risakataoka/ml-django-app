@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}手書き数字 認識AIアプリ{% endblock %}
+{% block content %}
+<div class="back-img">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <h1 id="title-name">手書き数字 AIアプリ</h1>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="p-2 bd-highlight" style="text-align: center"><img class="sample-img" src="{% static 'img/sample1.jpg' %}" width="130px" height="130px">
+      </div>
+      <div class="p-2 bd-highlight"><p style="font-size: medium; text-align: center;color: #4C4C4C;">（例: 判定=3）</p>
+      </div>   
+    </div>
+    <div class="row justify-content-center">
+      <p style="margin: 10px;color: #4C4C4C;">画像内の手書きされた数字を読み取り、判定します。<br>
+      以下の「ファイル選択」よりjpeg画像を選択した上で「判定」ボタンを押してください。画像は複数選択が可能です。<br><br>
+      ※注意事項※<br>
+      ・黒背景、白文字での画像をご使用ください。<br>
+      ・画像サイズを28×28にしていただくことで、より正確な結果を取得できます。
+      </p>
+    </div>    
+    <form action="{% url 'machine:upload' %}" method="POST" enctype="multipart/form-data">
+      <div class="row justify-content-center">
+        <div class="file-select">
+          <input style="color: #4C4C4C;" type="file" name="files[]" multiple>
+        </div>        
+      </div>
+      <div class="row justify-content-center">
+        <div class="submit-button">
+          <input type="submit" class="btn btn-lg btn-info" value="check!!">
+        </div>      
+      </div>   
+    {% csrf_token %}
+    </form>
+
+    {% if message %}
+    <div class="row justify-content-center">
+      <div class="error-msg">
+        <div class="alert alert-danger" role="alert">
+          <p><font color="red">{{message}}<br></font> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+{% endblock %}

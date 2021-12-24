@@ -1,0 +1,55 @@
+absl-py==1.0.0
+asgiref @ file:///tmp/build/80754af9/asgiref_1602513567813/work
+astunparse==1.6.3
+cachetools==4.2.4
+certifi==2021.10.8
+charset-normalizer==2.0.9
+Django @ file:///tmp/build/80754af9/django_1601563330930/work
+flatbuffers==2.0
+gast==0.4.0
+google-auth==2.3.3
+google-auth-oauthlib==0.4.6
+google-pasta==0.2.0
+grpcio==1.42.0
+h5py==3.6.0
+idna==3.3
+importlib-metadata==4.8.2
+Janome==0.4.1
+keras==2.7.0
+Keras-Preprocessing==1.1.2
+libclang==12.0.0
+Markdown==3.3.6
+mecab-python3==1.0.4
+mkl-fft==1.3.1
+mkl-random @ file:///opt/concourse/worker/volumes/live/0cda23d8-7460-44b2-7e5d-3c76a8a0ca7e/volume/mkl_random_1626186083266/work
+mkl-service==2.4.0
+numpy @ file:///opt/concourse/worker/volumes/live/21fb9bb9-9731-4901-4403-2bc27cc2cc33/volume/numpy_and_numpy_base_1634106739792/work
+oauthlib==3.1.1
+opt-einsum==3.3.0
+Pillow==8.4.0
+plac==1.3.4
+protobuf==3.19.1
+psycopg2 @ file:///opt/concourse/worker/volumes/live/7541fe58-2a45-4073-5d69-313e733fc729/volume/psycopg2_1612298592535/work
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pytz==2020.1
+requests==2.26.0
+requests-oauthlib==1.3.0
+rsa==4.8
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
+tensorboard==2.7.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.0
+tensorflow==2.7.0
+tensorflow-estimator==2.7.0
+tensorflow-io-gcs-filesystem==0.22.0
+termcolor==1.1.0
+tqdm==4.62.3
+typing_extensions==4.0.1
+unidic==1.1.0
+urllib3==1.26.7
+wasabi==0.9.0
+Werkzeug==2.0.2
+wrapt==1.13.3
+zipp==3.6.0
