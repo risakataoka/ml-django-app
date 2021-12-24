@@ -21,7 +21,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'x4qd!9(j15469r@-f&fn37&^&9ui079a6bce((^c=2$60j@0nh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -127,3 +126,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+# 追加 local_settings.py読み込みのため(参考URL:https://qiita.com/frosty/items/bb5bc1553f452e5bb8ff)
+try:
+    from .local_settings import *
+except ImportError:
+    pass
