@@ -53,3 +53,7 @@ wasabi==0.9.0
 Werkzeug==2.0.2
 wrapt==1.13.3
 zipp==3.6.0
+
+-r requirements-dev.txt
+gunicorn
+psycopg2
